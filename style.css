@@ -1,13 +1,10 @@
-
 body {
   margin: 0;
   font-family: 'Outfit', sans-serif;
   background-color: #1b1b1b;
   color: white;
   overflow-x: hidden;
-  position: relative;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -18,26 +15,22 @@ body {
   position: relative;
   z-index: 10;
 }
-
 .brand {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-
 .brand-name {
   font-size: 28px;
   font-weight: 600;
   color: white;
   letter-spacing: 0.15em;
 }
-
 .logo {
   height: 34px;
-  border-radius: 6px;
-  filter: drop-shadow(0 0 6px rgba(255,140,0,0.35));
+  border-radius: 50%;
+  filter: drop-shadow(0 0 12px rgba(255,140,0,0.45));
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -45,62 +38,51 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
 }
-
 .hero {
   position: relative;
   text-align: center;
   padding: 160px 20px;
+  background: radial-gradient(circle at center, rgba(255,140,0,0.4), rgba(255,255,255,0.06) 50%, #1b1b1b 80%);
   z-index: 1;
   overflow: hidden;
 }
-
 .hero::before {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 800px;
-  height: 800px;
+  width: 1000px;
+  height: 1000px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(255,123,0,0.25) 0%, transparent 70%);
-  filter: blur(90px);
+  background: radial-gradient(circle, rgba(255,123,0,0.4) 0%, transparent 75%);
+  filter: blur(120px);
   z-index: 0;
 }
-
 .hero h1 {
   position: relative;
   font-size: 3.2rem;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: #ffffff;
   letter-spacing: 0.5px;
   z-index: 1;
 }
-
-.hero-features {
+.hero-subtitles {
   position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 50px;
   z-index: 1;
+  max-width: 700px;
+  margin: 0 auto 50px;
 }
-
-.feature {
-  font-size: 1.05rem;
-  background-color: rgba(255, 255, 255, 0.08);
-  padding: 12px 24px;
-  border-radius: 28px;
-  backdrop-filter: blur(4px);
+.hero-subtitles p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #f0f0f0;
 }
-
 .cta-button {
   position: relative;
   padding: 16px 36px;
@@ -111,14 +93,11 @@ nav ul li a {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  transition: background 0.2s ease;
   z-index: 1;
 }
-
 .cta-button:hover {
   background-color: #e0e0e0;
 }
-
 footer {
   background-color: #111;
   color: #aaa;
@@ -127,4 +106,17 @@ footer {
   font-size: 14px;
   z-index: 10;
   position: relative;
+}
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(255,140,0,0.05) 2px, transparent 2px);
+  background-size: 50px 50px;
+  animation: float 20s linear infinite;
+  z-index: 0;
+}
+@keyframes float {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
 }
