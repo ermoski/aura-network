@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Sora', sans-serif;
-  background-color: #0d0d0d;
-  color: rgba(255, 245, 230, 0.9);
+  background-color: #ffffff;
+  color: #222;
   overflow: hidden;
   position: relative;
 }
@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 24px 5%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255,255,255,0.9);
   z-index: 2;
 }
 .brand {
@@ -29,7 +29,7 @@ body {
 .brand-name {
   font-size: 28px;
   font-weight: 600;
-  color: rgba(255, 245, 230, 0.9);
+  color: #222;
   letter-spacing: 0.1em;
 }
 .logo {
@@ -45,7 +45,7 @@ nav ul {
   padding: 0;
 }
 nav ul li a {
-  color: rgba(255, 245, 230, 0.9);
+  color: #222;
   text-decoration: none;
   font-size: 14px;
 }
@@ -68,7 +68,7 @@ nav ul li a {
   margin-top: -80px;
   position: relative;
   font-size: 3.2rem;
-  color: rgba(255, 245, 230, 0.9);
+  color: #222;
   z-index: 2;
   margin-bottom: 40px;
 }
@@ -82,12 +82,12 @@ nav ul li a {
   position: relative;
 }
 .box {
-  background-color: rgba(255,255,255,0.08);
+  background-color: rgba(0,0,0,0.06);
   padding: 30px 20px;
   border-radius: 16px;
-  width: 240px;
-  box-shadow: 0 4px 20px rgba(255,140,0,0.1);
-  color: rgba(255, 245, 230, 0.9);
+  width: 200px;
+  box-shadow: 0 2px 12px rgba(255,140,0,0.08);
+  color: #222;
 }
 .box h2 {
   font-size: 1.3rem;
@@ -99,7 +99,7 @@ nav ul li a {
 .cta-button {
   padding: 14px 30px;
   font-size: 15px;
-  background-color: rgba(255, 245, 230, 0.9);
+  background-color: #222;
   color: #ff6f00;
   font-weight: bold;
   border: none;
