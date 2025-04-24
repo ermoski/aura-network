@@ -3,7 +3,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 90,
         "density": {
           "enable": true,
           "value_area": 700
@@ -16,11 +16,11 @@ particlesJS('particles-js',
         "type": "circle"
       },
       "opacity": {
-        "value": 0.8,
+        "value": 0.6,
         "random": true
       },
       "size": {
-        "value": 4,
+        "value": 3,
         "random": true
       },
       "line_linked": {
@@ -28,7 +28,7 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": 1.6,
+        "speed": 1.8,
         "direction": "none",
         "random": true,
         "straight": false,
