@@ -3,7 +3,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 90,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 700
@@ -16,11 +16,11 @@ particlesJS('particles-js',
         "type": "circle"
       },
       "opacity": {
-        "value": 0.6,
+        "value": 0.8,
         "random": true
       },
       "size": {
-        "value": 3,
+        "value": 4,
         "random": true
       },
       "line_linked": {
