@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,12 +26,22 @@
   </header>
 
   <section class="hero">
-    <div class="particles"></div>
-    <h1>Buy & Sell Crypto. Instantly.</h1>
+    <canvas id="particles"></canvas>
+    <div class="overlay"></div>
+    <h1 class="main-title">Buy & Sell Crypto. Instantly.</h1>
     <div class="hero-subtitles">
-      <p>Send crypto directly to your wallet. No delays. No middlemen.</p>
-      <p>Sell and receive fiat directly to your bank.</p>
-      <p>Simple. Secure. Built for long-term investors.</p>
+      <div class="subtitle-block">
+        <h2>Send crypto directly to your wallet</h2>
+        <p>No delays. No middlemen. Just your assets in your control.</p>
+      </div>
+      <div class="subtitle-block">
+        <h2>Sell and receive fiat to your bank</h2>
+        <p>EUR, USD and more — fast, secure, and compliant.</p>
+      </div>
+      <div class="subtitle-block">
+        <h2>Simple. Secure. Long-term.</h2>
+        <p>Aura is built for clarity, safety and serious investors.</p>
+      </div>
     </div>
     <button class="cta-button">Get Started</button>
   </section>
@@ -38,5 +49,6 @@
   <footer>
     <p>&copy; 2025 Aura. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
