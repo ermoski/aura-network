@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Outfit', sans-serif;
-  background-color: #111;
+  background-color: #0d0d0d;
   color: white;
   overflow: hidden;
 }
@@ -10,113 +10,109 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 5%;
-  background-color: #0c0c0c;
-  border-bottom: 1px solid #333;
-  position: relative;
-  z-index: 100;
+  padding: 24px 5%;
+  background-color: #080808;
+  border-bottom: 1px solid #222;
 }
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 .brand-name {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   color: white;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.1em;
 }
 .logo {
-  height: 36px;
+  height: 32px;
   border-radius: 50%;
-  filter: drop-shadow(0 0 15px rgba(255,140,0,0.55));
+  filter: drop-shadow(0 0 10px rgba(255,140,0,0.5));
 }
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 24px;
   margin: 0;
   padding: 0;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
 }
 .hero {
   position: relative;
   text-align: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 5%;
+  padding: 160px 5% 140px;
   overflow: hidden;
-}
-.hero .overlay {
-  position: absolute;
-  top: -20%;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-  background: radial-gradient(circle at 30% 40%, rgba(255,140,0,0.35), transparent 50%),
-              radial-gradient(circle at 70% 60%, rgba(255,200,100,0.3), transparent 60%);
-  filter: blur(120px);
-  z-index: 1;
 }
 canvas#particles {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.glow-overlay {
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  width: 150%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 30%, rgba(255,140,0,0.35) 0%, rgba(13,13,13,1) 80%);
+  filter: blur(80px);
+  z-index: 1;
 }
 .main-title {
   position: relative;
-  font-size: 3.2rem;
-  letter-spacing: 0.5px;
+  font-size: 3rem;
   z-index: 2;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
-.hero-subtitles {
+.hero-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 0 auto 50px;
+  z-index: 2;
   position: relative;
-  max-width: 800px;
-  margin: 0 auto 60px;
-  z-index: 2;
 }
-.subtitle-block {
-  margin-bottom: 30px;
+.box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  border-radius: 16px;
+  width: 240px;
+  box-shadow: 0 4px 20px rgba(255,140,0,0.08);
 }
-.subtitle-block h2 {
-  font-size: 1.3rem;
+.box h2 {
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
-.subtitle-block p {
-  font-size: 1rem;
-  color: #dddddd;
+.box p {
+  font-size: 0.95rem;
+  color: #ddd;
 }
 .cta-button {
   position: relative;
-  padding: 16px 40px;
-  font-size: 16px;
+  padding: 14px 30px;
+  font-size: 15px;
   background-color: white;
-  color: #1e1e1e;
+  color: #0d0d0d;
   font-weight: bold;
   border: none;
-  border-radius: 30px;
+  border-radius: 28px;
   cursor: pointer;
   z-index: 2;
-  transition: background 0.3s ease;
 }
 .cta-button:hover {
-  background-color: #e0e0e0;
+  background-color: #eee;
 }
 footer {
-  background-color: #0c0c0c;
-  color: #999;
+  background-color: #080808;
+  color: #aaa;
   text-align: center;
   padding: 40px 0;
-  font-size: 14px;
-  z-index: 100;
-  position: relative;
+  font-size: 13px;
 }
