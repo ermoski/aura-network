@@ -1,0 +1,130 @@
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #1b1b1b;
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #111;
+  border-bottom: 1px solid #333;
+  position: relative;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-name {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.15em;
+}
+
+.logo {
+  height: 34px;
+  border-radius: 6px;
+  filter: drop-shadow(0 0 6px rgba(255,140,0,0.35));
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 160px 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255,123,0,0.25) 0%, transparent 70%);
+  filter: blur(90px);
+  z-index: 0;
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 3.2rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  z-index: 1;
+}
+
+.hero-features {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+.feature {
+  font-size: 1.05rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 12px 24px;
+  border-radius: 28px;
+  backdrop-filter: blur(4px);
+}
+
+.cta-button {
+  position: relative;
+  padding: 16px 36px;
+  font-size: 16px;
+  background-color: white;
+  color: #1e1e1e;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  z-index: 1;
+}
+
+.cta-button:hover {
+  background-color: #e0e0e0;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  z-index: 10;
+  position: relative;
+}
