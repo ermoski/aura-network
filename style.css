@@ -98,10 +98,12 @@ nav ul li a {
   font-size: 0.95rem;
 }
 .cta-button {
+  opacity: 1;
+  backdrop-filter: none;
   padding: 12px 26px;
   font-size: 15px;
-  background-color: #ff7900;
-  color: #fff; font-weight: 600;
+  background-color: #ff6f00;
+  color: white; font-weight: 700;
   font-weight: bold;
   border: none;
   border-radius: 28px;
