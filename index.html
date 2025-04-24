@@ -2,60 +2,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Aura - Buy & Sell Crypto Instantly</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aura - Buy & Sell Crypto Instantly</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div id="particles-js"></div>
-    <header class="header">
-        <div class="logo">AURA</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Roadmap</a></li>
-                <li><a href="#">Learn</a></li>
-                <li><a href="#">Log in</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div id="particles-js"></div>
 
-    <main class="hero">
-        <section class="hero-left">
-            <h1>Buy & Sell Crypto. Instantly.</h1>
-            <div class="pillars">
-                <div class="box">Send crypto directly to your wallet</div>
-                <div class="box">Sell for fiat and receive it in your bank</div>
-                <div class="box">Built for long term investors</div>
-            </div>
-        </section>
-        <section class="hero-right">
-            <div class="widget">
-                <h2>Buy / Sell Crypto</h2>
-                <label>Asset:</label>
-                <select>
-                    <option>BTC</option>
-                    <option>ETH</option>
-                    <option>SOL</option>
-                    <option>XRP</option>
-                </select>
-                <label>Amount (EUR):</label>
-                <input type="number" placeholder="Enter amount" />
-                <label>Wallet Address:</label>
-                <input type="text" placeholder="Enter wallet address" />
-                <label>Card or Payment:</label>
-                <input type="text" placeholder="Card or method" />
-                <button>Continue</button>
-            </div>
-        </section>
-    </main>
+  <header class="header">
+    <div class="logo">AURA</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Roadmap</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Log in</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <footer>
-        © 2025 Aura. All rights reserved.
-    </footer>
+  <section class="hero">
+    <h1 class="main-title">Buy & Sell Crypto. Instantly.</h1>
+    <div class="subtitle-container">
+      <div class="subtitle-box">Send crypto directly to your wallet</div>
+      <div class="subtitle-box">Sell for fiat and receive it in your bank</div>
+      <div class="subtitle-box">Built for long-term investors</div>
+    </div>
+  </section>
 
-    <script src="particles.min.js"></script>
-    <script src="particles-config.js"></script>
+  <section class="exchange">
+    <div class="exchange-widget">
+      <h2>Crypto Exchange</h2>
+      <label>Action:</label>
+      <select>
+        <option>Buy</option>
+        <option>Sell</option>
+        <option>Swap</option>
+      </select>
+      <label>Asset:</label>
+      <select>
+        <option>BTC</option>
+        <option>ETH</option>
+        <option>SOL</option>
+        <option>XRP</option>
+      </select>
+      <label>Amount:</label>
+      <input type="number" placeholder="Enter amount"/>
+      <label>Wallet Address:</label>
+      <input type="text" placeholder="Enter wallet address"/>
+      <label>Card / Payment:</label>
+      <input type="text" placeholder="Card or method"/>
+      <button>Continue</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Aura. All rights reserved.
+  </footer>
+
+  <script src="particles.min.js"></script>
+  <script src="particles-config.js"></script>
 </body>
 </html>
