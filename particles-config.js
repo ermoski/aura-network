@@ -1,22 +1,14 @@
-
-particlesJS("particles-js", {
+particlesJS('particles-js', {
   particles: {
-    number: { value: 40 },
-    size: { value: 3 },
-    color: { value: "#ff6a00" },
-    opacity: { value: 0.6 },
-    line_linked: { enable: false },
-    move: {
-      enable: true,
-      speed: 0.8,
-      direction: "none",
-      random: true,
-      out_mode: "out"
-    }
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: '#ff6a00' },
+    shape: { type: 'circle' },
+    opacity: { value: 0.5, random: true },
+    size: { value: 3, random: true },
+    move: { enable: true, speed: 2, random: true, out_mode: 'out' }
   },
   interactivity: {
-    events: {
-      onhover: { enable: true, mode: "repulse" }
-    }
-  }
+    events: { onhover: { enable: true, mode: 'repulse' } }
+  },
+  retina_detect: true
 });
